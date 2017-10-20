@@ -186,7 +186,7 @@ exports.decorateTerm = (Term, { React, notify }) => {
         const b = parseInt(colorCode.slice(5, 7), 16);
         const color = [r, g, b];
         this._particles.push(this._createParticle(x, y, color));
-
+        this._cursor.style.backgroundColor = "rgb("+r+","+g+","+b+")";
       }
     }
 
